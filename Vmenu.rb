@@ -1,8 +1,8 @@
 
 require './Voter.rb'
 # module VoterMethods
-$voter_array = Array.new
-$candidate_array = Array.new
+@voter_arry = Array.new
+@candidate_arry = Array.new
 
 def disclaimer
   puts "\n"*15
@@ -77,7 +77,7 @@ end
 
 def voter_update
   sleep 2#lists the names
-  $voter_array.each { |x|
+  @voter_arry.each { |x|
   print x.voter_name + ", \n"
   }
 
@@ -87,7 +87,7 @@ def voter_update
   voter_choice = gets.chomp.capitalize
 
   #compare input against the voter Array
-  $voter_array.each { |x|
+  @voter_arry.each { |x|
   if x.voter_name == voter_choice
 
 
@@ -134,14 +134,14 @@ end
 
 def candidate_update
   sleep 2
-  $candidate_array.each { |x|
+  @candidate_arry.each { |x|
     print x.candidate_name + ", \n"
 }
 
 puts "Which Candidate are you going to change?"
 candidate_choice = gets.chomp.capitalize
 
-$candidate_array.each { |x|
+@candidate_arry.each { |x|
 if x.candidate_name == candidate_choice
 puts "#{x.candidate_name} of the #{x.candidate_party} has been found \n What is their new name?"
   new_candidate_name = gets.chomp.capitalize
@@ -204,7 +204,7 @@ def menu_choice
         puts "Voter is #{name} and their views are Independant"
       else puts "Please pick a valid option"
       end
-      $voter_array << Voter.new(name, viewpoint)
+      @voter_arry << Voter.new(name, viewpoint)
       sleep 1
       puts "Returning to main menu"
       startmenu
@@ -221,7 +221,7 @@ def menu_choice
         when '2' then candidate_party = "Democrat"
           puts "Candidate #{candidate_name} is a Democrat"
         end
-        $candidate_array << Candidate.new(candidate_name, candidate_party)
+        @candidate_arry << Candidate.new(candidate_name, candidate_party)
         sleep 1
         puts "Returning to main menu"
         startmenu
@@ -253,14 +253,14 @@ def list
   case response
 
   when '1'
-  $voter_array.each { |x|
+  @voter_arry.each { |x|
   print x.voter_name + " "
   print x.voter_viewpoints
   puts "\n"
   }
 
   when '2'
-    $candidate_array.each { |x|
+    @candidate_arry.each { |x|
     print x.candidate_name + " "
     print x.candidate_party
     puts "\n"
