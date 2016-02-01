@@ -45,18 +45,18 @@ test_candidate(voter)
 
 
 voters = [
-  Voter.new("Vinnie", "Progressive"),
-  Voter.new("Eric", "Libertarian"),
-  Voter.new("Aaron", "Conservative"),
+  Voter.new("Vinnie" , "Progressive"),
+  Voter.new("Jazmine", "Libertarian"),
+  Voter.new("Norah"  , "Conservative"),
   Voter.new("Ashlynn", "Independant"),
-  Voter.new("Dylan", "Democrat"),
+  Voter.new("Ben"    , "Democrat"),
 ]
 candidates = [
-  Candidate.new("Billy", "Republican"),
-  Candidate.new("Karla", "Democrat"),
-  Candidate.new("Carol", "Republican"),
-  Candidate.new("Gerry", "Republican"),
-  Candidate.new("Kevin", "Republican"),
+  Candidate.new("Helmar", "Republican"),
+  Candidate.new("Karla" , "Democrat"),
+  Candidate.new("Carol" , "Republican"),
+  Candidate.new("Gerry" , "Republican"),
+  Candidate.new("Kevin" , "Republican"),
 ]
 
 # voters += candidates

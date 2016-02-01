@@ -61,23 +61,26 @@ def every_stump
     end
   end
 end
-
+#problem area #######################################
 public
 def listen(candidate)
   puts "#{candidate}: #{candidate} sucks!"
 end
+#################################################
+
 
 
 def stump
   puts "The Candidates will now stand on their stumps"
-  speaker = @candidate_name
+  candidate_name = @candidate_name
   all = @voter_name, @candidate_name
-  puts "#{speaker} says you should vote for them!"
+  puts "#{candidate_name} says you should vote for them!"
   sleep 1
-
+#voter undefined method
   all.each do |voter|
-    voter.listen(speaker)
+    voter(candidate_name)
   end
+  ####################
   @final
 end
 
