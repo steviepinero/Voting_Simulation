@@ -78,7 +78,7 @@ def stump
   sleep 1
 #voter undefined method
   all.each do |voter|
-    voter(candidate_name)
+    voter.listen(candidate_name)
   end
   ####################
   @final
