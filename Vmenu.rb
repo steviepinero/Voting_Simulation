@@ -8,7 +8,7 @@ def disclaimer
   puts "\n"*15
   puts "Please play in full screen"
   sleep 2
-  puts "Product incomplete :("
+  puts "voting doesnt work"
   sleep 2
 end
 
@@ -39,7 +39,7 @@ V,| `~~Y*+mL_,  :f~~ ~                   q_    V#b              ::::::::::::::::
     /K_jWK#X###~#|###mW#   :P  j;##|    #, `#, @
    !TGW###8#m#K7q=WWmd##mmm#m.Z8###!    #W  |b |
    /4#@##W#+##P:WZWMZ*W=m##WMN|WZWP:#;m,d#W;Dd |                                  !!!!
-  W*~~~M#W!KWjW5!!/WV##N7j#KXPNMX#DW###b###D#Xb|                                  BEST
+  W*~~~M#W!KWjW5!!/WV##N7j#KXPNMX#DW###b###D#Xb|                                  WORST
  !'    d!JXXXW!`!Ldm@#bd#WW8K)X|X#8#8#K##V#!K5|#                                 VOTING
       d@f~  jf.Z\/Vb*Y+W#j(WMZPrMM#@##K#@##;WWj##,                              SIMULATION
       ~    m*~'   '#`\8#W4KW#qX@VW##W#8##8#rNWK###G<%%>                            EVER
